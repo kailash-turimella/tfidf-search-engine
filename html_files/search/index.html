@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #3c3c3c;
+            font-family: 'Courier New', monospace;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        input {
+            width: 240px;
+            height: 24px;
+            font-size: 18px;
+            padding: 10px;
+            background-color: #7f7f7f;
+            border: 2px solid #3f3f3f;
+            border-radius: 10px;
+        }
+
+        button {
+            width: 220px;
+            height: 40px;
+            font-size: 18px;
+            color: #ffffff;
+            background-color: #007bff;
+            border: 2px solid #0056b3;
+            border-radius: 15px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p style="line-height: 550%;"><br></p>
+        <h1 style="color: #ffffff; font-size: 50px;">Search Engine</h1>
+        <p style="line-height: 150%;"><br></p>
+        <input type="text" id="query" placeholder="Enter search query">
+        <button onclick="search()">Search</button>
+    </div>
+
+    <script>
+        function search() {
+            const query = document.getElementById("query").value;
+            window.location.href = `/search?q=${encodeURIComponent(query)}`;
+        }
+
+        document.getElementById("query").addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                search();
+            }
+        });
+    </script>
+</body>
+</html>
