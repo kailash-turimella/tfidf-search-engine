@@ -35,7 +35,7 @@ A high-performance search engine built in  **Go**  with  **SQLite**  backend sup
 
 ## **Project Structure**
 
-```
+```bash
 ├── html_files/
 │  ├── index.html
 │  ├── robots.txt
@@ -78,7 +78,7 @@ A high-performance search engine built in  **Go**  with  **SQLite**  backend sup
 
 ### **1. Clone the Repository**
 
-```
+```bash
 git clone git@github.com:kailash-turimella/tfidf-search-engine.git
 cd tfidf-search-engine
 ```
@@ -86,14 +86,14 @@ cd tfidf-search-engine
 ### **2. Install Dependencies**
 
 Ensure you have  [Go](https://go.dev/)  installed, then run:
-```
+```bash
 go mod tidy
 ```
 
 ### **3. Run Tests**
 
 Execute all unit and integration tests to verify functionality:
-```
+```bash
 go test ./...
 ```
 
@@ -103,7 +103,7 @@ go test ./...
 
 ### **Start the Server**
 
-```
+```bash
 go run .
 ```
 
@@ -118,7 +118,7 @@ Open your browser and navigate to the following endpoints:
     
     -   Kick off a crawl manually, or start immediately with a URL:
 
-```
+```bash
 http://localhost:8080/crawl?q=<start_url>
 ```
 
@@ -128,7 +128,7 @@ http://localhost:8080/crawl?q=<start_url>
     -   Perform queries manually, or get ranked results directly:
         
     
-```
+```bash
 http://localhost:8080/search?q=<term>
 ```
   
