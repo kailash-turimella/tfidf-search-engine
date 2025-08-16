@@ -1,12 +1,9 @@
 
 # **TF-IDF Search Engine**
 
-  
-
 A high-performance search engine built in  **Go**  with  **SQLite**  backend support. It crawls, indexes, and ranks documents using the  **TF-IDF algorithm**  with support for stopword removal, stemming, and efficient query handling.
 
   
-
 ## **Features**
 
 -   **Concurrent Crawling & Indexing**  – Built with goroutines, channels, and  sync.WaitGroup  for scalable document ingestion.
@@ -22,8 +19,6 @@ A high-performance search engine built in  **Go**  with  **SQLite**  backend sup
 -   **Comprehensive Testing**  – Unit and integration tests covering parsing, indexing, TF-IDF scoring, and concurrency.
     
 
-  
-
 ## **Tech Stack**
 
 -   **Language**: Go (Golang)
@@ -34,9 +29,6 @@ A high-performance search engine built in  **Go**  with  **SQLite**  backend sup
     -   go-sqlite3  – SQLite driver
     -   snowball  – stemming
     -   testify  – testing utilities
-        
-    
-
   
 
 ## **Project Structure**
@@ -80,10 +72,7 @@ A high-performance search engine built in  **Go**  with  **SQLite**  backend sup
 ```
 
 
-
 ## **Getting Started**
-
-  
 
 ### **1. Clone the Repository**
 
