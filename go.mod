@@ -1,4 +1,4 @@
-module project04-kailash-turimella
+module tfidf-search-engine
 
 go 1.23.5
 
